@@ -9,7 +9,11 @@
     --primary-font: "Work Sans";
     --secondary-font: "Eczar";
 }
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     font-family: var(--primary-font), sans-serif;
     background-color: var(--primary-color);
@@ -18,7 +22,10 @@ body {
     max-width: 1400px;
     margin: 0 auto;
 }
-
+.header {
+    min-height: 60px;
+    padding: 40px 0;
+}
 .header__nav-list {
     display: flex;
     list-style: none;
@@ -33,6 +40,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 50px;
 }
 
 .main__banner--badge {
@@ -49,8 +57,10 @@ body {
     font-family: var(--secondary-font), serif;
     line-height: 125%;
     font-weight: 600;
+    margin: 24px 0;
 }
 .btn {
+    margin-right: 10px;
     padding: 24px 40px;
     font-size: 1.5em;
     font-weight: 600;
@@ -59,4 +69,18 @@ body {
     gap: 10px;
     background-color: var(--button-primary-color);
     color: var(--button-text-color);
+}
+.footer {
+    padding: 64px 0;
+    display: flex;
+}
+.footer__cta {
+    width: 70%;
+}
+.footer__social {
+    align-self: flex-end;
+    justify-self: flex-end;
+    display: flex;
+    width: 30%;
+    justify-content: end;
 }
