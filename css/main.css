@@ -5,4 +5,58 @@
     --title-color: #403930;
     --button-primary-color: #4E5E80;
     --button-primary-hover: #4D5566;
+    --button-text-color: #F3F2FF;
+    --primary-font: "Work Sans";
+    --secondary-font: "Eczar";
+}
+
+body {
+    font-family: var(--primary-font), sans-serif;
+    background-color: var(--primary-color);
+}
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.header__nav-list {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+.header__nav-list-item {
+    font-size: 1.25em;
+    font-weight: 500;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main__banner--badge {
+    background-color: var(--adjecent-color);
+    border-radius: 12px;
+    padding: 12px 24px;
+    font-weight: 500;
+    font-size: 1.5em;
+    display: inline-grid;
+
+}
+.main__banner--title {
+    font-size: 4em;
+    font-family: var(--secondary-font), serif;
+    line-height: 125%;
+    font-weight: 600;
+}
+.btn {
+    padding: 24px 40px;
+    font-size: 1.5em;
+    font-weight: 600;
+    border-radius: 12px;
+    display: inline-flex;
+    gap: 10px;
+    background-color: var(--button-primary-color);
+    color: var(--button-text-color);
 }
